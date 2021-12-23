@@ -1,10 +1,12 @@
 import validators
 from exceptions import UrlIsNotValid
 
+
 class UrlValidator:
     """
     проверяет урлу, и чекает tar.gz
     """
+
     def __init__(self, url_for_validate: str):
         self.url = url_for_validate
         self.check_url()
@@ -14,6 +16,7 @@ class UrlValidator:
         чек окончания гз
         :return:
         """
+
     def is_url(self):
         """
         чек
@@ -30,4 +33,3 @@ class UrlValidator:
         """
         self.is_url()
         self.is_gz_extension()
-
