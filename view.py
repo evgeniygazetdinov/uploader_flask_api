@@ -26,10 +26,9 @@ def set_archive_on_start():
         "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48"
     )
     upload_result = uploader.download_file()
-    packing = FilePacker(upload_result)
 
     return (
-        json.dumps({"success": packing.pack()}),
+        json.dumps({"success": upload_result}),
         200,
         {"ContentType": "application/json"},
     )

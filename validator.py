@@ -11,12 +11,6 @@ class UrlValidator:
         self.url = url_for_validate
         self.check_url()
 
-    def is_gz_extension(self):
-        """
-        чек окончания гз
-        :return:
-        """
-
     def is_url(self):
         """
         чек
